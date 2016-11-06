@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pan.mynestedapplication.MainActivity">
+
+    <com.example.pan.mynestedapplication.NestedScrollParentView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="这是一个header" />
+
+        <TextView
+            android:id="@+id/tv_sticky_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3d79b6"
+            android:padding="10dp"
+            android:text="这是一个stickyheader"
+            android:textColor="#ffffff" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.example.pan.mynestedapplication.NestedScrollParentView>
+</RelativeLayout>
